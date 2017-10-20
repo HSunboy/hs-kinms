@@ -26,7 +26,7 @@ function action(mode, type, selection) {
             for (i = 0; i < 10; i++) {
                 text += "";//
             }
-			text += "\t\t\t  #e欢迎来到#b天成冒险岛 #k!#n\r\n"
+			text += "\t\t\t  #e欢迎来到#bHundsun冒险岛 #k!#n\r\n"
 			text += "\t\t\t  #e您当前点卷为：#b"+cm.getPlayer().getCSPoints(1)+"#k!#n\r\n"
             text += "#L1##e#d100点卷兑换1个交易币#l\r\n\r\n"//3
             text += "#L2##d500点卷兑换5个交易币#l\r\n\r\n"//3

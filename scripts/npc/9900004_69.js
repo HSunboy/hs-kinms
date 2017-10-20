@@ -27,8 +27,9 @@ function action(mode, type, selection) {
                 text += "";
             }
 			//显示物品ID图片用的代码是  #v这里写入ID#
-            text += "#e#d请联系管理员领取#v4170007#兑换礼包！QQ群：84586869#l\r\n\r\n"//3
+            text += "#e#d请联系管理员领取#v4170007#兑换礼包！QQ：649002521#l\r\n\r\n"//3
             text += "#L1##r新手入驻礼包#l\r\n\r\n"//3
+            cm.gainItem(4170007,1);
             cm.sendSimple(text);
         } else if (selection == 1) {
 			//1
@@ -52,22 +53,12 @@ function action(mode, type, selection) {
             cm.sendOk("现金栏空余不足1个空格！");
             cm.dispose();
 			}else */if(cm.haveItem(4170007,1)){
-				cm.gainItem(4170007, -1);
-				cm.gainItem(1112405, 1);//李琳戒指
-				cm.gainItem(1112657, 1);//sd
-				cm.gainItem(5121003, 50);//鸡汤
-				cm.gainItem(1003528, 1);//2012挖掘帽子
-				cm.gainItem(5072000, 100);//喇叭01112724
-				cm.gainItem(4000463, 60);//纪念币
-				cm.gainItem(1142076,5,5,5,5,150,150,5,5,15,15,15,15,15,15);//勋章
-				cm.gainItem(5150001, 5);//理发
-				cm.gainItem(5150040, 10);//皇家
-				cm.gainItem(5151001, 5);//染色
-				cm.gainItem(5152001, 10);//整形
-				cm.gainItem(5153000, 5);//护肤
+
+				cm.gainItem(1142076,100,100,100,100,450,450,50,50,100,100,15,16,17,18);//勋章
+                cm.gainItem(4170007,-1);
 				cm.gainMeso(999999);
             cm.sendOk("换购成功！");
-			cm.worldMessage(6,"玩家：["+cm.getName()+"]领取了天成冒险岛 新手入驻礼包！欢迎你~！么么哒！");
+			cm.worldMessage(6,"玩家：["+cm.getName()+"]领取了新手入驻礼包！");
             cm.dispose();
 			}else{
             cm.sendOk("请联系管理员领取兑换物品！");

@@ -60,7 +60,7 @@ function end(mode, type, selection) {
         } else if (status == 2) {
             qm.sendNextPrev("我能教你的只有这些了。有点儿舍不得也没办法，到了要离别的时候。路上小心，一路顺风啊！！！\r\n\r\n#fUI/UIWindow.img/QuestIcon/4/0#\r\n#v2010000# 3 #t2010000#\r\n#v2010009# 3 #t2010009#\r\n\r\n#fUI/UIWindow.img/QuestIcon/8/0# 10 exp");
         } else if (status == 3) {
-            qm.gainExp(10);
+            qm.gainExp(100);
             qm.gainItem(2010000, 3);
             qm.gainItem(2010009, 3);
             qm.forceCompleteQuest();

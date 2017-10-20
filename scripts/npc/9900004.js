@@ -33,11 +33,11 @@ function action(mode, type, selection) {
                 text += "";
             }
 			cm.teachSkill(1004,1,1);
-	cm.gainItem(1912000,1);
-	cm.gainItem(1902000,1);
+	// cm.gainItem(1912000,1);
+	// cm.gainItem(1902000,1);
           //  text += "#b#v4031344##v4031344##v4031344##v3994075##v3994066##v3994071##v3994077##v4031344##v4031344##v4031344##k\r\n";
             //text += ""+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+爱心+"\r\n"
-		   text += " \t\t\t  #e#d欢迎来到#d天成冒险岛#k#n              \r\n           #v3994078##v3994061##v3994071##v3994082##v3994062#\r\n"
+		   text += " \t\t\t  #e#d欢迎来到#dHundSun冒险岛#k#n              \r\n           #v4031344##v4031344##v4031344##v4031344##v4031344#\r\n"
             text += "\t\t\t#e#d当前在线时间："+cm.getGamePoints()+"分钟！#k#n\r\n"
 		//var tex2 = ""+cm.getHyPay(1)+"";
         //    text += "#L8##b○每日签到#l\t#L9##b○每日任务#l\t#L16##b○每日挑战#l\r\n\r\n"//3
@@ -51,11 +51,11 @@ function action(mode, type, selection) {
             text += "#L11##e#r兑换充值礼包#l#L15##e#r兑换新手礼包#l#L14##e#r纪念币交易所#l\r\n"//3
            // text += "#L4##e#r○角色快捷转职#l\t   #L7##e#r○充值点卷领取#l \r\n"//3
             text += "                                        \r\n"//3
-            text += "#L4##e#r角色快捷转职#l#L2##e#d坐骑任务补给#l#L13##e#r稀有点装商城#l\r\n"//3
+            text += "#L4##e#r角色快捷转职#l#L2##e#d坐骑任务补给#l#L8##e#r枫叶换抵用卷#l\r\n"//3
             text += "                                         \r\n"//
-            text += "#L8##e#r枫叶换抵用卷#l#L9##e#d在线时间奖励#l#L16##e#d清理背包物品#l\r\n"//3
+            text += "#L9##e#d在线时间奖励#l#L16##e#d清理背包物品#l\r\n"//3
             text += "                                        \r\n"//3
-            text += "#L10##r天成冒险岛特价9999点卷大礼包开启中·(2月3日结束)#l\r\n\r\n"//3
+
            // text += "#L11##r天成冒险岛特价4999点卷大礼包开启中·(2月3日结束)#l\r\n\r\n"//3
             //text += "#L3##d○快捷传送#l\t#L4##b○快捷转职#l\r\n\r\n"//3 
             //text += "#L5##e#d组队副本传送#l       #L16##e#d清理背包物品#l  \r\n"//3
