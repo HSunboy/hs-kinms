@@ -32,7 +32,23 @@ public class MapleShop {
         rechargeableItems.add(2070001); //回旋镖
         rechargeableItems.add(2070002); //黑色利刃
         rechargeableItems.add(2070003); //雪花镖
-        rechargeableItems.add(2070004); //黑色刺
+
+        rechargeableItems.add(2330000); //子弹
+        rechargeableItems.add(2330001); //手枪弹
+        rechargeableItems.add(2330002); //铜头子弹
+        rechargeableItems.add(2330003); //银子弹
+        rechargeableItems.add(2330004); //高爆弹
+        rechargeableItems.add(2330005); //穿甲弹
+
+     rechargeableItems.add(2000004); //超级药水50%
+     rechargeableItems.add(2000011); //活力药水 mp
+     rechargeableItems.add(2020012); //奶酪 hp
+     rechargeableItems.add(2020014); //清晨露水 mp
+     rechargeableItems.add(2022003); //烤鳗鱼 hp
+//     rechargeableItems.add(2101232); //箱子
+
+
+       /* rechargeableItems.add(2070004); //黑色刺
         rechargeableItems.add(2070005); //金钱镖
         rechargeableItems.add(2070006); //齿轮镖
         rechargeableItems.add(2070007); //月牙镖
@@ -53,15 +69,10 @@ public class MapleShop {
         rechargeableItems.add(2070025); //无限飞镖
         rechargeableItems.add(2070026); //无限飞镖
 
-        rechargeableItems.add(2330000); //子弹
-        rechargeableItems.add(2330001); //手枪弹
-        rechargeableItems.add(2330002); //铜头子弹
-        rechargeableItems.add(2330003); //银子弹
-        rechargeableItems.add(2330004); //高爆弹
-        rechargeableItems.add(2330005); //穿甲弹
+
         rechargeableItems.add(2330006); //新手专用弹
         rechargeableItems.add(2331000); //穿甲弹
-        rechargeableItems.add(2332000); //新手专用弹
+        rechargeableItems.add(2332000); //新手专用弹*/
        // rechargeableItems.add(2330007); //高科技穿甲弹
        // rechargeableItems.add(2330008); //钢铁子弹
     }

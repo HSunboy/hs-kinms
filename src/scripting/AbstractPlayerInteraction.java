@@ -551,7 +551,7 @@ public final void setPlayerStat(final String type, int x) {
             //是装备并且不是飞镖和子弹
             if (type.equals(MapleInventoryType.EQUIP) && !GameConstants.isThrowingStar(id) && !GameConstants.isBullet(id)) {
                 final Equip item = (Equip) (randomStats ? ii.randomizeStats((Equip) ii.getEquipById(id)) : ii.getEquipById(id));
-                if (period > 0) {
+                if (period > 0) {//时间
                     item.setExpiration(System.currentTimeMillis() + (period * 60 * 60 * 1000));
                 }
                 if (slots > 0) {
