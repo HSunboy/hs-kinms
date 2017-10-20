@@ -1,0 +1,143 @@
+---------------------------2016.5.30 更新
+添加每日赏金任务
+添加每日杀怪任务
+添加每日副本任务
+添加每日杀BOSS任务
+
+分别的accounts_info 表内容 都是int 11
+sjrw 
+sgrw
+fbrw
+sbossrw
+sgrwa
+fbrwa
+sbossrwa
+lb
+
+characters 表内容 都是 int 11
+mrsjrw 
+mrsgrw
+mrsgrwa
+mrfbrw
+mrfbrwa
+mrsbossrw
+mrsbossrwa
+mrsgrws
+mrsgrwas
+mrfbrws
+mrfbrwas
+mrsbossrws
+mrsbossrwas
+
+, mrfbrw = ?, mrsjrw = ?, mrsgrw = ?, mrsbossrw = ?, hythd = ?, mrsgrwa = ?, mrfbrwa = ?, mrsbossrwa = ?, mrsgrws = ?,  mrsbossrws = ?, mrfbrws = ?, mrsgrwas = ?,  mrsbossrwas = ?, mrfbrwas = ? 顺序
+
+调用函数 characters 表内容
+
+getmrsjrw
+
+setmrsjrw
+ 
+getmrsgrw
+
+setmrsgrw
+
+getmrfbrw
+ 
+setmrfbrw
+ 
+getmrsbossrw
+
+setmrsbossrw
+ 
+getmrsgrws
+
+setmrsgrws
+
+getmrfbrws
+ 
+setmrfbrws
+ 
+getmrsbossrws
+
+setmrsbossrws
+
+getmrsgrwa
+
+setmrsgrwa
+
+getmrfbrwa
+ 
+setmrfbrwa
+ 
+getmrsbossrwa
+
+setmrsbossrwa
+
+getmrsgrwas
+
+setmrsgrwas
+
+getmrfbrwas
+ 
+setmrfbrwas
+ 
+getmrsbossrwas
+
+setmrsbossrwas
+
+//-----------------------------每日赏金任务  npc直接调用accounts_info 表内容
+getSJRW() {
+gainSJRW(int amount) {
+resetSJRW() {
+//-----------------------------每日副本任务
+getFBRW() {
+gainFBRW(int amount) {
+resetFBRW() {
+getFBRWA() {
+gainFBRWA(int amount) {
+resetFBRWA() {
+//-----------------------------每日杀怪任务
+getSGRW() {
+gainSGRW(int amount) {
+resetSGRW() {
+getSGRWA() {
+gainSGRWA(int amount) {
+resetSGRWA() {
+//-----------------------------每日杀BOSS任务
+getSBOSSRW() {
+gainSBOSSRW(int amount) {
+resetSBOSSRW() {
+getSBOSSRWA() {
+gainSBOSSRWA(int amount) {
+resetSBOSSRWA() {
+//-----------------------------七天礼包判断当天
+getlb() {
+gainlb(int amount) {
+resetlb() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------2016.6.3日更新内容
+增加豆豆机功能
+
+characters 表内容 增加
+ddj int 11
+
+getddj
+setddj
+gainddj
+
+更新屏幕中间黄色字体
+更新聊天窗黄色字体
