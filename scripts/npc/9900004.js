@@ -48,13 +48,13 @@ function action(mode, type, selection) {
             text += "#L3##e#d城镇活动传送#l#L5##e#d组队副本传送#l#L7##e#d快捷消耗商店#l\r\n"//3
             text += "                                         \r\n"//3
 		  // }
-            text += "#L11##e#r兑换充值礼包#l#L15##e#r兑换新手礼包#l#L14##e#r纪念币交易所#l\r\n"//3
+            text += "#L11##e#r兑换充值礼包#l#L15##e#r兑换新手礼包#l#L14##e#r超级武器#l\r\n"//3
            // text += "#L4##e#r○角色快捷转职#l\t   #L7##e#r○充值点卷领取#l \r\n"//3
             text += "                                        \r\n"//3
-            text += "#L4##e#r角色快捷转职#l#L2##e#d坐骑任务补给#l#L8##e#r枫叶换抵用卷#l\r\n"//3
+            text += "#L4##e#r角色快捷转职#l#L18##e#d全满#l#L8##e#r枫叶换抵用卷#l\r\n"//3
             text += "                                         \r\n"//
-            text += "#L9##e#d在线时间奖励#l#L16##e#d清理背包物品#l\r\n"//3
-            text += "                                        \r\n"//3
+            text += "#L9##e#d在线时间奖励#l#L16##e#d清理背包物品#l#L17##e#d升级#l\r\n"//3
+            text += " #L99##e#dTEST#l                                       \r\n"//3
 
            // text += "#L11##r天成冒险岛特价4999点卷大礼包开启中·(2月3日结束)#l\r\n\r\n"//3
             //text += "#L3##d○快捷传送#l\t#L4##b○快捷转职#l\r\n\r\n"//3 
@@ -96,12 +96,36 @@ function action(mode, type, selection) {
         } else if (selection == 13) {//
             cm.openNpc(9900004, 13);
         } else if (selection == 14) {//
-            cm.openNpc(9900004, 14);
+            cm.gainItem(1452005,0,0,0,0,0,0,5000,5000,1000,1000,100,100,100,100);//1322005
+            cm.dispose();
         } else if (selection == 15) {//
             cm.openNpc(9900004, 69);
         } else if (selection == 16) {//
             cm.openNpc(9900004, 444);
-		}
+		} else if (selection == 17) {//
+            // cm.setLevel(29);
+            // cm.levelUP();
+
+                cm.gainExp(99999999);
+
+
+
+            cm.dispose();
+        }else if(selection==18){
+            cm.maxStats();
+            cm.dispose();
+        }else if(selection==99){
+            cm.teachSkill(3120005,30,30);
+            cm.teachSkill(3121000,30,30);
+            cm.teachSkill(3121002,30,30);
+            cm.teachSkill(3121003,30,30);
+            cm.teachSkill(3121004,30,30);
+            cm.teachSkill(3121006,30,30);
+            cm.teachSkill(3121007,30,30);
+            cm.teachSkill(3121008,30,30);
+            cm.teachSkill(3121009,30,30);
+            cm.dispose();
+        }
     }
 }
 

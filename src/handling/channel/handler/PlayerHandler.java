@@ -742,7 +742,7 @@ public class PlayerHandler {
                 if (numFinisherOrbs == 0) {
                     return;
                 }
-                maxdamage = 199999; // FIXME reenable damage calculation for finishers
+                maxdamage = 1999999; // FIXME reenable damage calculation for finishers
             }
         }
         chr.checkFollow();

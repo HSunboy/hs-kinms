@@ -1198,6 +1198,15 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
     public void setHP(short hp) {
         c.getPlayer().getStat().setHp(hp);
     }
+    public void levelUP(){
+        c.getPlayer().levelUp();
+    }
+    public void gainExp(int exp){
+        c.getPlayer().gainExp(exp,false,false,true);
+    }
+    public void setLevel(short level){
+        c.getPlayer().setLevel(level);
+    }
     public void maxStats() {
         List<Pair<MapleStat, Integer>> statup = new ArrayList<Pair<MapleStat, Integer>>(2);
         c.getPlayer().getStat().setStr((short) 32767);

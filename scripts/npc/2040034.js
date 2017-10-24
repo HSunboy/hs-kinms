@@ -22,7 +22,7 @@ var Log1 = '玩具城任务完成';
 var minlvl = 35;
 var maxlvl = 200;
 //人数设置
-var minplayers = 3;
+var minplayers = 1;
 var maxplayers = 6;
 //组队最终奖励物品代码
 var zzjl = 1072369
@@ -62,7 +62,7 @@ function action(mode, type, selection) {
             yhms += "#L0##b开始 " + fbmc + "#l\r\n\r\n";
             yhms += "#L2##b查询 - 副本状态信息#l\r\n\r\n";
             yhms += "#L3##b#r重置副本(用于卡副本使用)#l\r\n\r\n";
-            yhms += "#fMob/0130101.img/move/0#   欢迎来到#b天成#k - 冒险岛(用心创造快乐)    #fMob/0130101.img/move/0#\r\n";
+
             cm.sendSimple(yhms);
         } else if (status == 1) {
             if (selection == 0) {

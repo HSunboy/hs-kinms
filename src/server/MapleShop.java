@@ -40,11 +40,11 @@ public class MapleShop {
         rechargeableItems.add(2330004); //高爆弹
         rechargeableItems.add(2330005); //穿甲弹
 
-     rechargeableItems.add(2000004); //超级药水50%
-     rechargeableItems.add(2000011); //活力药水 mp
-     rechargeableItems.add(2020012); //奶酪 hp
-     rechargeableItems.add(2020014); //清晨露水 mp
-     rechargeableItems.add(2022003); //烤鳗鱼 hp
+//     rechargeableItems.add(2000004); //超级药水50%
+//     rechargeableItems.add(2000011); //活力药水 mp
+//     rechargeableItems.add(2020012); //奶酪 hp
+//     rechargeableItems.add(2020014); //清晨露水 mp
+//     rechargeableItems.add(2022003); //烤鳗鱼 hp
 //     rechargeableItems.add(2101232); //箱子
 
 

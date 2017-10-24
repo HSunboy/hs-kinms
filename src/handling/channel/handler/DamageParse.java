@@ -232,7 +232,7 @@ public class DamageParse {
                                 }
                                 if (eachd > maxDamagePerHit * 3.0D) {
                                     eachd = (int) (maxDamagePerHit * 2.0D);
-                                    if (eachd >= 199999) {
+                                    if (eachd >= 1999999) {
                                        // player.getClient().getSession().close();
                                         return;
                                     }
@@ -291,7 +291,7 @@ public class DamageParse {
                     if (attack.skill != 1221011) {
                         monster.damage(player, totDamageToOneMonster, true, attack.skill);
                     } else {
-                        monster.damage(player, (monster.getStats().isBoss() ? 199999 : (monster.getHp() - 1)), true, attack.skill);
+                        monster.damage(player, (monster.getStats().isBoss() ? 1999999 : (monster.getHp() - 1)), true, attack.skill);
                     }
                     if (monster.isBuffed(MonsterStatus.WEAPON_DAMAGE_REFLECT)) { //test
                         player.addHP(-(7000 + Randomizer.nextInt(8000))); //this is what it seems to be?
@@ -722,8 +722,8 @@ public class DamageParse {
                 elemMaxDamagePerMob = 1;
                 break;
         }
-        if (elemMaxDamagePerMob > 199999) {
-            elemMaxDamagePerMob = 199999;
+        if (elemMaxDamagePerMob > 1999999) {
+            elemMaxDamagePerMob = 1999999;
         } else if (elemMaxDamagePerMob < 0) {
             elemMaxDamagePerMob = 1;
         }
@@ -767,7 +767,7 @@ public class DamageParse {
 
     private static double CalculateMaxWeaponDamagePerHit(final MapleCharacter player, final MapleMonster monster, final AttackInfo attack, final ISkill theSkill, final MapleStatEffect attackEffect, double maximumDamageToMonster, final Integer CriticalDamagePercent) {
         if (player.getMapId() / 1000000 == 914) { //aran
-            return 199999;
+            return 1999999;
         }
         List<Element> elements = new ArrayList<Element>();
         boolean defined = false;
@@ -796,15 +796,15 @@ public class DamageParse {
                     defined = true;
                     break;
                 case 4331003: //Owl Spirit
-                    maximumDamageToMonster = (monster.getStats().isBoss() ? 199999 : monster.getHp());
+                    maximumDamageToMonster = (monster.getStats().isBoss() ? 1999999 : monster.getHp());
                     defined = true;
                     break;
                 case 3221007: // Sniping
-                    maximumDamageToMonster = (monster.getStats().isBoss() ? 199999 : monster.getMobMaxHp());
+                    maximumDamageToMonster = (monster.getStats().isBoss() ? 1999999 : monster.getMobMaxHp());
                     defined = true;
                     break;
                 case 1221011://Heavens Hammer
-                    maximumDamageToMonster = (monster.getStats().isBoss() ? 199999 : monster.getHp() - 1);
+                    maximumDamageToMonster = (monster.getStats().isBoss() ? 1999999 : monster.getHp() - 1);
                     defined = true;
                     break;
                 case 4211006: // Meso Explosion
@@ -908,9 +908,9 @@ public class DamageParse {
         final PlayerStats stat = player.getStat();
         elementalMaxDamagePerMonster += (elementalMaxDamagePerMonster * (monster.getStats().isBoss() ? stat.bossdam_r : stat.dam_r)) / 100.0;
 
-        if (elementalMaxDamagePerMonster > 199999) {
+        if (elementalMaxDamagePerMonster > 1999999) {
             if (!defined) {
-                elementalMaxDamagePerMonster = 199999;
+                elementalMaxDamagePerMonster = 1999999;
             }
         } else if (elementalMaxDamagePerMonster < 0) {
             elementalMaxDamagePerMonster = 1;
@@ -947,7 +947,7 @@ public class DamageParse {
                         if (!eachd.right) {
                             if (attack.skill == 4221001) { //assassinate never crit first 3, always crit last
                                 eachd.right = (hit == 4 && Randomizer.nextInt(100) < 90);
-                            } else if (attack.skill == 3221007 || eachd.left > 199999) { //snipe always crit
+                            } else if (attack.skill == 3221007 || eachd.left > 1999999) { //snipe always crit
                                 eachd.right = true;
                             } else if (shadow && hit > mid_att) { //shadowpartner copies second half to first half
                                 eachd.right = eachd_copy.get(hit - 1 - mid_att).right;
@@ -1464,9 +1464,9 @@ public class DamageParse {
     public static final int Damage_PG(MapleCharacter c, int damage, AttackInfo ret) {
         if (GameConstants.game == 2) {
             if (ret.skill != 14101006) {
-                if (damage >= 199999) {
+                if (damage >= 1999999) {
                     int sj = Randomizer.nextInt(80000);
-                    damage = 199999 + (c.getStat().getTotalLuk() + c.getStat().getTotalDex() + c.getStat().getTotalStr() + c.getStat().getTotalInt()) * 3 + (c.getStat().getTotalWatk() + c.getStat().getTotalMagic()) * 6;
+                    damage = 1999999 + (c.getStat().getTotalLuk() + c.getStat().getTotalDex() + c.getStat().getTotalStr() + c.getStat().getTotalInt()) * 3 + (c.getStat().getTotalWatk() + c.getStat().getTotalMagic()) * 6;
                     if (damage > sj) {
                         damage = damage + sj;
                     }

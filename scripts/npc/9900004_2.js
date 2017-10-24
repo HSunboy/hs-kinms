@@ -410,8 +410,8 @@ function action(mode, type, selection) {
             cm.sendOk("转职成功！加油锻炼，当你变的强大的时候记的来找我哦！");
             cm.serverNotice("[转职系统]: 恭喜 [" + cm.getPlayer().getName() + "] 在NPC：管理员 快速转职成功！");
             
-    cm.teachSkill(3120005,0,10);
-    cm.teachSkill(3121000,0,10);
+    cm.teachSkill(3120005,10,10);
+    cm.teachSkill(3121000,30,30);
     cm.teachSkill(3121002,0,10);
     cm.teachSkill(3121003,0,10);
     cm.teachSkill(3121004,0,10);
